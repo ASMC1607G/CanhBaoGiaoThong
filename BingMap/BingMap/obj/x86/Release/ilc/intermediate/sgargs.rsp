@@ -1,0 +1,10 @@
+/out:"D:\WindowApp\BingMap\BingMap\obj\x86\Release\ilc\intermediate\SgGenerated\\"
+/int:"D:\WindowApp\BingMap\BingMap\obj\x86\Release\ilc\intermediate\\"
+/ref:"D:\WindowApp\BingMap\BingMap\obj\x86\Release\ilc\intermediate\PreMergeILTransformed\\"
+/ref:"D:\WindowApp\BingMap\BingMap\obj\x86\Release\ilc\intermediate\TransformedSRWR\\"
+/ref:"D:\WindowApp\BingMap\BingMap\obj\x86\Release\ilc\in\\"
+/ref:"D:\WindowApp\BingMap\BingMap\obj\x86\Release\ilc\in\\"
+/ref:"D:\WindowApp\BingMap\BingMap\obj\x86\Release\ilc\in\\"
+/ref:"C:\Program Files (x86)\MSBuild\Microsoft\.NetNative\x86\ilc\lib\Private\\"
+/ref:"D:\WindowApp\BingMap\BingMap\obj\x86\Release\ilc\in\WinMetadata\\"
+/ca:System.Private.CoreLib

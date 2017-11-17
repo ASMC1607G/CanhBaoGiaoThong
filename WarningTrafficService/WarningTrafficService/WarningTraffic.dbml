@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="WarningTraffic" Class="WarningTrafficDataContext" Serialization="Unidirectional" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=ThanhTung;Initial Catalog=WarningTraffic;Persist Security Info=True;User ID=sa" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="WarningTrafficConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.[User]" Member="Users">
+    <Type Name="User">
+      <Column Name="email" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="password" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="phone" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="address" Type="System.String" DbType="NVarChar(60)" CanBeNull="true" />
+      <Association Name="User_Warning" Member="Warnings" ThisKey="email" OtherKey="email" Type="Warning" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Warning" Member="Warnings">
+    <Type Name="Warning">
+      <Column Name="idWarning" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="address" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="contentWarning" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="time" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="police" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="hotline" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="email" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="lon" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="lat" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Association Name="User_Warning" Member="User" ThisKey="email" OtherKey="email" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Law" Member="Laws">
+    <Type Name="Law">
+      <Column Name="idLaw" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="nameLaw" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="contentLaw" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="condemn" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="description" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

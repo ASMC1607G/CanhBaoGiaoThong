@@ -1,0 +1,117 @@
+﻿<Page
+    x:Class="BingMap.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:BingMap"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:bm="using:Bing.Maps"
+    mc:Ignorable="d">
+    <Page.BottomAppBar >
+        <CommandBar HorizontalContentAlignment="Center" >
+            <AppBarButton Icon="Contact" Label="Account"/>
+            <AppBarButton Icon="AllApps" Label="Law"/>
+            <AppBarButton Icon="Favorite" Label="Warning"/>
+            <AppBarButton Icon="Directions" Label="Navigation"/>
+        </CommandBar>
+    </Page.BottomAppBar>
+    
+    <Page.Resources>
+        <DataTemplate x:Key="LogoTemplate">
+            <bm:Pushpin x:ConnectionId='1' IsTapEnabled="True" Background="Red"                         Text="{Binding NamePushPin}">
+                <bm:MapLayer.Position>
+                    <bm:Location Latitude="{Binding Latitude}" Longitude="{Binding Longitude}" />
+                </bm:MapLayer.Position>
+            </bm:Pushpin>
+        </DataTemplate>
+    </Page.Resources>
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <!--<bm:Map x:Name="myMap"
+                Grid.ColumnSpan="2"
+                Grid.RowSpan="3"
+                Credentials="Bp68EyrOHw2RkMAy3QxW~lU4Mm5cPthtBNkIQEytc0w~ArKQGH0e2-sHu0XLQFkfBoPcxglmwFZXVsAPndvtPsSkT3zYJAq22ycULXBworQZ"
+                MapType="Road"
+                ZoomLevel="10">
+                <bm:Map.Center>
+                    <bm:Location Latitude="21.027764" Longitude="105.834160"></bm:Location>
+                </bm:Map.Center>
+
+                <bm:Map.Children>
+                    <bm:Pushpin Tapped="Pushpin_Tapped" Background="Red">
+                        <bm:MapLayer.Position>
+                            <bm:Location Latitude="21.027764" Longitude="105.834160" />
+                        </bm:MapLayer.Position>
+                    </bm:Pushpin>
+                </bm:Map.Children>
+            </bm:Map>-->
+           
+            <bm:Map x:ConnectionId='2' x:Name="myMap" 
+                    Grid.ColumnSpan="2"
+                    Grid.RowSpan="3"
+                    ZoomLevel="8"
+                    Credentials="Bp68EyrOHw2RkMAy3QxW~lU4Mm5cPthtBNkIQEytc0w~ArKQGH0e2-sHu0XLQFkfBoPcxglmwFZXVsAPndvtPsSkT3zYJAq22ycULXBworQZ" >
+                <bm:MapItemsControl ItemTemplate="{StaticResource LogoTemplate}" ItemsSource="{Binding PushpinCollection}" >
+                </bm:MapItemsControl>
+                <bm:Map.Center>
+                    <bm:Location Latitude="21.027764" Longitude="105.834160"></bm:Location>
+                </bm:Map.Center>
+            </bm:Map>
+            <!--<StackPanel Grid.Column="1" Grid.Row="1" Height="150" Background="Gray" Opacity="0.8" >
+                <Button x:Name="MyLocation" FontFamily="Segoe MDL2 Assets" Margin="0,10,0,0" Content="&#xE1C4;" Click="MyLocation_Click"/>
+            </StackPanel>-->
+            <Button x:ConnectionId='3' x:Name="MyLocation" 
+                    Grid.Column="1" 
+                    Height="45" 
+                    Foreground="White" 
+                    Background="Gray" 
+                    Opacity="0.7" 
+                    FontWeight="Bold" 
+                    FontSize="20" 
+                    Grid.Row="1" 
+                    FontFamily="Segoe MDL2 Assets" 
+                    Margin="0,10,0,0" 
+                    Content="&#xE1C4;" 
+                                            >
+            </Button>
+            <StackPanel x:ConnectionId='4' Grid.ColumnSpan="2"
+                        Background="LightGray" 
+                        Opacity="0.8"
+                        Margin="0,30,0,0"
+                        Visibility="Collapsed"
+                        x:Name="DetailBackGround"
+                        Grid.Row="2">
+            </StackPanel>
+            <StackPanel x:ConnectionId='5' Grid.ColumnSpan="2"
+                        Margin="0,30,0,0"
+                        x:Name="DetailContent"
+                        Visibility="Collapsed"
+                        Grid.Row="2">
+                <Grid Margin="0,30,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock  Text="Địa điểm: " />
+                    <TextBlock x:ConnectionId='6' x:Name="TenDiem" Grid.Column="1" Margin="20,0,0,0"></TextBlock>
+                </Grid>
+            </StackPanel>
+            
+            
+        </Grid>
+
+    </Grid>
+</Page>
+
+    
+

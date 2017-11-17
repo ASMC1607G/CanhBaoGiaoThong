@@ -1,0 +1,1 @@
+D:\WindowApp\BingMap\BingMap\BingMap.csproj;x86

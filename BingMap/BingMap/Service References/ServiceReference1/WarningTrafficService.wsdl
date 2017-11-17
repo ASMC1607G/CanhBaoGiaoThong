@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="WarningTrafficService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:53429/WarningTrafficService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:53429/WarningTrafficService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:53429/WarningTrafficService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WarningTrafficService" />
+      <xsd:import schemaLocation="http://localhost:53429/WarningTrafficService.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IWarningTrafficService_Login_InputMessage">
+    <wsdl:part name="parameters" element="tns:Login" />
+  </wsdl:message>
+  <wsdl:message name="IWarningTrafficService_Login_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWarningTrafficService_Register_InputMessage">
+    <wsdl:part name="parameters" element="tns:Register" />
+  </wsdl:message>
+  <wsdl:message name="IWarningTrafficService_Register_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWarningTrafficService_CheckEmail_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckEmail" />
+  </wsdl:message>
+  <wsdl:message name="IWarningTrafficService_CheckEmail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckEmailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWarningTrafficService_GetAllLaw_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllLaw" />
+  </wsdl:message>
+  <wsdl:message name="IWarningTrafficService_GetAllLaw_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllLawResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWarningTrafficService_GetLawByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLawByID" />
+  </wsdl:message>
+  <wsdl:message name="IWarningTrafficService_GetLawByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLawByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWarningTrafficService_SuggestLaw_InputMessage">
+    <wsdl:part name="parameters" element="tns:SuggestLaw" />
+  </wsdl:message>
+  <wsdl:message name="IWarningTrafficService_SuggestLaw_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SuggestLawResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWarningTrafficService_SearchLawByName_InputMessage">
+    <wsdl:part name="parameters" element="tns:SearchLawByName" />
+  </wsdl:message>
+  <wsdl:message name="IWarningTrafficService_SearchLawByName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchLawByNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWarningTrafficService_GetAllWarning_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllWarning" />
+  </wsdl:message>
+  <wsdl:message name="IWarningTrafficService_GetAllWarning_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllWarningResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWarningTrafficService_GetWarningByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetWarningByID" />
+  </wsdl:message>
+  <wsdl:message name="IWarningTrafficService_GetWarningByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetWarningByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWarningTrafficService_AddWarning_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddWarning" />
+  </wsdl:message>
+  <wsdl:message name="IWarningTrafficService_AddWarning_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddWarningResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWarningTrafficService_DeleteWarning_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteWarning" />
+  </wsdl:message>
+  <wsdl:message name="IWarningTrafficService_DeleteWarning_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteWarningResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IWarningTrafficService">
+    <wsdl:operation name="Login">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWarningTrafficService/Login" message="tns:IWarningTrafficService_Login_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWarningTrafficService/LoginResponse" message="tns:IWarningTrafficService_Login_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Register">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWarningTrafficService/Register" message="tns:IWarningTrafficService_Register_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWarningTrafficService/RegisterResponse" message="tns:IWarningTrafficService_Register_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckEmail">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWarningTrafficService/CheckEmail" message="tns:IWarningTrafficService_CheckEmail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWarningTrafficService/CheckEmailResponse" message="tns:IWarningTrafficService_CheckEmail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllLaw">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWarningTrafficService/GetAllLaw" message="tns:IWarningTrafficService_GetAllLaw_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWarningTrafficService/GetAllLawResponse" message="tns:IWarningTrafficService_GetAllLaw_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLawByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWarningTrafficService/GetLawByID" message="tns:IWarningTrafficService_GetLawByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWarningTrafficService/GetLawByIDResponse" message="tns:IWarningTrafficService_GetLawByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SuggestLaw">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWarningTrafficService/SuggestLaw" message="tns:IWarningTrafficService_SuggestLaw_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWarningTrafficService/SuggestLawResponse" message="tns:IWarningTrafficService_SuggestLaw_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchLawByName">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWarningTrafficService/SearchLawByName" message="tns:IWarningTrafficService_SearchLawByName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWarningTrafficService/SearchLawByNameResponse" message="tns:IWarningTrafficService_SearchLawByName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllWarning">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWarningTrafficService/GetAllWarning" message="tns:IWarningTrafficService_GetAllWarning_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWarningTrafficService/GetAllWarningResponse" message="tns:IWarningTrafficService_GetAllWarning_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWarningByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWarningTrafficService/GetWarningByID" message="tns:IWarningTrafficService_GetWarningByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWarningTrafficService/GetWarningByIDResponse" message="tns:IWarningTrafficService_GetWarningByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddWarning">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWarningTrafficService/AddWarning" message="tns:IWarningTrafficService_AddWarning_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWarningTrafficService/AddWarningResponse" message="tns:IWarningTrafficService_AddWarning_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteWarning">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWarningTrafficService/DeleteWarning" message="tns:IWarningTrafficService_DeleteWarning_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWarningTrafficService/DeleteWarningResponse" message="tns:IWarningTrafficService_DeleteWarning_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IWarningTrafficService" type="tns:IWarningTrafficService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Login">
+      <soap:operation soapAction="http://tempuri.org/IWarningTrafficService/Login" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Register">
+      <soap:operation soapAction="http://tempuri.org/IWarningTrafficService/Register" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckEmail">
+      <soap:operation soapAction="http://tempuri.org/IWarningTrafficService/CheckEmail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllLaw">
+      <soap:operation soapAction="http://tempuri.org/IWarningTrafficService/GetAllLaw" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLawByID">
+      <soap:operation soapAction="http://tempuri.org/IWarningTrafficService/GetLawByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SuggestLaw">
+      <soap:operation soapAction="http://tempuri.org/IWarningTrafficService/SuggestLaw" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchLawByName">
+      <soap:operation soapAction="http://tempuri.org/IWarningTrafficService/SearchLawByName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllWarning">
+      <soap:operation soapAction="http://tempuri.org/IWarningTrafficService/GetAllWarning" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWarningByID">
+      <soap:operation soapAction="http://tempuri.org/IWarningTrafficService/GetWarningByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddWarning">
+      <soap:operation soapAction="http://tempuri.org/IWarningTrafficService/AddWarning" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteWarning">
+      <soap:operation soapAction="http://tempuri.org/IWarningTrafficService/DeleteWarning" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WarningTrafficService">
+    <wsdl:port name="BasicHttpBinding_IWarningTrafficService" binding="tns:BasicHttpBinding_IWarningTrafficService">
+      <soap:address location="http://localhost:53429/WarningTrafficService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

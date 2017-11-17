@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="ed4e08d3-a865-4483-8bb1-b7239643b946" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.ObjectModel.ObservableCollection`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>false</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:53429/WarningTrafficService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="WarningTrafficService2.xsd" MetadataType="Schema" ID="0fdc9f98-31cc-4fc0-998a-387fd38a27e4" SourceId="1" SourceUrl="http://localhost:53429/WarningTrafficService.svc?xsd=xsd0" />
+    <MetadataFile FileName="WarningTrafficService.disco" MetadataType="Disco" ID="a477fe39-502c-4960-92da-63dc0dcf4597" SourceId="1" SourceUrl="http://localhost:53429/WarningTrafficService.svc?disco" />
+    <MetadataFile FileName="WarningTrafficService.wsdl" MetadataType="Wsdl" ID="a0f7b7e1-41c7-49c0-b9ee-f7d255e54978" SourceId="1" SourceUrl="http://localhost:53429/WarningTrafficService.svc?wsdl" />
+    <MetadataFile FileName="WarningTrafficService.xsd" MetadataType="Schema" ID="c2f94eca-d587-4ada-8baa-b92aa4628acc" SourceId="1" SourceUrl="http://localhost:53429/WarningTrafficService.svc?xsd=xsd1" />
+    <MetadataFile FileName="WarningTrafficService3.xsd" MetadataType="Schema" ID="32704136-973d-4e45-ac27-df2c78cd5738" SourceId="1" SourceUrl="http://localhost:53429/WarningTrafficService.svc?xsd=xsd3" />
+    <MetadataFile FileName="WarningTrafficService1.xsd" MetadataType="Schema" ID="8483cdde-7b52-47c9-962b-8c154658bd90" SourceId="1" SourceUrl="http://localhost:53429/WarningTrafficService.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

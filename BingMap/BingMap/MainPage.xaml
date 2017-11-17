@@ -1,0 +1,276 @@
+﻿<Page
+    x:Class="BingMap.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:BingMap"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:bm="using:Bing.Maps"
+    mc:Ignorable="d">
+    <Page.BottomAppBar>
+        <CommandBar HorizontalContentAlignment="Center" AllowDrop="False" >
+            <AppBarButton x:Name="InforUser" Icon="Contact" Label="Account" Click="InforUser_Click"/>
+            <AppBarButton x:Name="LawButton" Icon="AllApps" Label="Law" Click="LawButton_Click"/>
+            <AppBarButton x:Name="AddWarningButton" Icon="Favorite" Label="Warning" Click="AddWarningButton_Click"/>
+            <AppBarButton x:Name="DirectionButton"  Icon="Directions" Label="Navigation" Click="DirectionButton_Click" />
+            <AppBarButton x:Name="FindLocation" Icon="Find" Label="Find a Location" Click="FindLocation_Click"/>
+        </CommandBar>
+    </Page.BottomAppBar>
+    
+    <Page.Resources>
+        <DataTemplate x:Key="LogoTemplate">
+            <bm:Pushpin IsTapEnabled="True" Background="Red" Tapped="Pushpin_Tapped" Text="{Binding TextPushpin}" Tag="{Binding KeyPushPin}">
+                <bm:MapLayer.Position>
+                    <bm:Location Latitude="{Binding Latitude}" Longitude="{Binding Longitude}" />
+                </bm:MapLayer.Position>
+            </bm:Pushpin>
+        </DataTemplate>
+    </Page.Resources>
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <bm:Map x:Name="myMap" 
+                    Grid.ColumnSpan="2"
+                    Grid.RowSpan="4"
+                    Grid.Row="0"
+                    RightTapped="myMap_RightTapped"
+                    PointerEntered="myMap_PointerEntered"
+                    ShowNavigationBar="True"
+                    ShowTraffic="True"
+                    ShowBuildings="True"
+                    ZoomLevel="8"
+                    Credentials="Bp68EyrOHw2RkMAy3QxW~lU4Mm5cPthtBNkIQEytc0w~ArKQGH0e2-sHu0XLQFkfBoPcxglmwFZXVsAPndvtPsSkT3zYJAq22ycULXBworQZ" >
+                <bm:MapItemsControl ItemTemplate="{StaticResource LogoTemplate}" ItemsSource="{Binding PushpinCollection}" />
+                <bm:Map.Center>
+                    <bm:Location Latitude="21.027764" Longitude="105.834160"></bm:Location>
+                </bm:Map.Center>
+            </bm:Map>
+            
+            <Button x:Name="MyLocation" 
+                    Grid.Column="1" 
+                    Height="45" 
+                    Foreground="White" 
+                    Background="Gray" 
+                    Opacity="0.7" 
+                    FontWeight="Bold" 
+                    FontSize="20" 
+                    Grid.Row="1" 
+                    FontFamily="Segoe MDL2 Assets" 
+                    Margin="0,10,0,0" 
+                    Content="&#xE1C4;" 
+                    Click="MyLocation_Click">
+            </Button>
+            <StackPanel Grid.ColumnSpan="2"
+                        Background="LightGray" 
+                        Opacity="0.8"
+                        Margin="0,30,0,0"
+                        Visibility="Collapsed"
+                        x:Name="DetailBackGround"
+                        Grid.Row="2">
+            </StackPanel>
+            <StackPanel Grid.ColumnSpan="2"
+                        Margin="0,30,0,0"
+                        x:Name="DetailContent"
+                        Visibility="Collapsed"
+                        Grid.Row="2">
+                <Grid Margin="0,30,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <TextBlock  Text="Địa điểm: " Margin="10,0,0,0"/>
+                    <TextBlock x:Name="TenDiem" 
+                               Grid.Column="1" 
+                               Margin="20,0,0,0" />
+
+                    <TextBlock  Text="Content: " Grid.Row="1" Margin="10,10,0,0" />
+                    <TextBlock x:Name="ContentTextBox" 
+                               Grid.Row="1" 
+                               Grid.Column="1" 
+                               Tapped="ContentTextBox_Tapped"
+                               Margin="20,10,0,0" />
+
+                    <TextBlock  Text="Time: " Grid.Row="2" Margin="10,10,0,0" />
+                    <TextBlock x:Name="TimeTextbox" 
+                               Grid.Column="1" 
+                               Grid.Row="2"
+                               Margin="20,10,0,0" />
+
+                    <TextBlock  Text="Police: " Grid.Row="3" Margin="10,10,0,0"/>
+                    <TextBlock x:Name="Police" 
+                               Grid.Row="3"
+                               Grid.Column="1" 
+                               Margin="20,10,0,0" />
+
+                    <TextBlock  Text="Hotline: " Grid.Row="4" Margin="10,10,0,0" />
+                    <TextBlock x:Name="Hotline" 
+                               Grid.Column="1" 
+                               Grid.Row="4"
+                               Margin="20,10,0,0" />
+
+                    <TextBlock  Text="User posted: " Grid.Row="5" Margin="10,10,0,0"/>
+                    <TextBlock x:Name="userPosted" 
+                               Grid.Column="1" 
+                               Grid.Row="5"
+                               Margin="20,10,0,0" />
+                </Grid>
+            </StackPanel>
+            
+            <StackPanel Grid.ColumnSpan="2"
+                        Margin="0,30,0,0"
+                        x:Name="DirectionContent"
+                        Visibility="Collapsed"
+                        Grid.Row="2">
+                <Grid Margin="0,30,0,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock  Text="From Location "  
+                                VerticalAlignment="Center"/>
+                    <TextBox x:Name="FromLocationTextBox" 
+                             Grid.Column="1" 
+                             Margin="10,0,0,0"/>
+
+                    <TextBlock  Text="To Location "  
+                                VerticalAlignment="Center" 
+                                Grid.Row="1" 
+                                Padding="0,15,0,0"/>
+                    <TextBox x:Name="ToLocationTextBox" 
+                             Grid.Column="1" 
+                             Grid.Row="1" 
+                             Margin="10,15,0,0" />
+
+                    <Button x:Name="GetDirectionButton" 
+                            Grid.Row="2" 
+                            Grid.Column="1" 
+                            Content="Direction" 
+                            Margin="10,30,0,0" 
+                            Click="GetDirectionButton_Click"/>
+
+                    <Button x:Name="FromMyLocation" 
+                            Grid.Column="2" 
+                            FontWeight="Bold" 
+                            Foreground="White"
+                            VerticalAlignment="Bottom"
+                            Background="LightGray"
+                            FontFamily="Segoe MDL2 Assets" 
+                            PointerEntered="FromMyLocation_PointerEntered"
+                            Content="&#xE1C4;" 
+                            Click="FromMyLocation_Click"/>
+
+                    <Button x:Name="ToMyLocation" 
+                            Grid.Column="2" 
+                            Grid.Row="1"
+                            FontWeight="Bold" 
+                            Foreground="White"
+                            VerticalAlignment="Bottom"
+                            PointerEntered="ToMyLocation_PointerEntered"
+                            Background="LightGray"
+                            FontFamily="Segoe MDL2 Assets" 
+                            Content="&#xE1C4;" 
+                            Click="ToMyLocation_Click"/>
+                </Grid>
+            </StackPanel>
+
+            <StackPanel Grid.ColumnSpan="2"
+                        Margin="0,30,0,0"
+                        x:Name="AddWarningContent"
+                        Visibility="Collapsed"
+                        Grid.Row="2">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock VerticalAlignment="Center" Margin="5,0,0,0" Grid.Row="0" Grid.Column="0">Adrress:</TextBlock>
+                    <TextBox x:Name="AddressTextBox" Grid.Row="0" Grid.Column="1" Margin="10,0,20,0"></TextBox>
+
+                    <TextBlock VerticalAlignment="Center" Margin="5,10,0,0" Grid.Row="1" Grid.Column="0">Content:</TextBlock>
+                    <TextBox x:Name="WarningTextBox" Grid.Row="1" Grid.Column="1" Margin="10,10,20,0"></TextBox>
+
+                    <TextBlock VerticalAlignment="Center" Margin="5,10,0,0" Grid.Row="2" Grid.Column="0">Time:</TextBlock>
+                    <TextBox x:Name="TimeWraningTextBox" Grid.Row="2" Grid.Column="1" Margin="10,10,20,0"></TextBox>
+
+                    <TextBlock VerticalAlignment="Center" Margin="5,10,0,0" Grid.Row="3" Grid.Column="0">Police:</TextBlock>
+                    <TextBox x:Name="PoliceTextBox" Grid.Row="3" Grid.Column="1" Margin="10,10,20,0"></TextBox>
+
+                    <TextBlock VerticalAlignment="Center" Margin="5,10,0,0" Grid.Row="4" Grid.Column="0">Hotline:</TextBlock>
+                    <TextBox x:Name="HotLineTextBox" Grid.Row="4" Grid.Column="1" Margin="10,10,20,0"></TextBox>
+
+                    <StackPanel Grid.Row="5" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,0">
+                        <Button x:Name="SubmitButton" Content="Submit" Click="SubmitButton_Click"/>
+                        <Button x:Name="FacebookButton" Content="Share Facebook" Margin="20,0,0,0"/>
+                        <Button x:Name="CancleButton" Content="Cancel" Margin="20,0,0,0" Click="CancleButton_Click"/>
+                    </StackPanel>
+                    
+                </Grid>
+            </StackPanel>
+
+                <ScrollViewer Grid.Row="2" 
+                          Grid.ColumnSpan="2" 
+                          x:Name="ScrollDirection" 
+                          Margin="0,30,0,0"
+                          Visibility="Collapsed">
+                <StackPanel x:Name="DirectionPanel" 
+                            Orientation="Vertical" />
+            </ScrollViewer>
+            
+
+            <AutoSuggestBox x:Name="FindLocationBox"
+                            Grid.ColumnSpan="2"
+                            Grid.Row="2"
+                            Visibility="Collapsed"
+                            VerticalAlignment="Bottom"
+                            QuerySubmitted="FindLocationBox_QuerySubmitted"
+                            PlaceholderText="Find a Location"
+                            QueryIcon="Find">
+            </AutoSuggestBox>
+            <AutoSuggestBox x:Name="AddWraningFindLocationBox"
+                            Grid.ColumnSpan="2"
+                            Grid.Row="2"
+                            Visibility="Collapsed"
+                            VerticalAlignment="Bottom"
+                            QuerySubmitted="AddWraningFindLocationBox_QuerySubmitted"
+                            PlaceholderText="Find a Location"
+                            QueryIcon="Find">
+            </AutoSuggestBox>
+        </Grid>
+    </Grid>
+</Page>
+
+    

@@ -1,0 +1,467 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>THANHTUNG</Machine>
+    <WindowsUser>Thanh Tung</WindowsUser>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetOsVersion>10.0</TargetOsVersion>
+    <TargetOsDescription>Windows 10.0</TargetOsDescription>
+    <SolutionConfiguration>Release|x86</SolutionConfiguration>
+    <PackageArchitecture>x86</PackageArchitecture>
+    <PackageIdentityName>e0334e28-c03f-49be-a142-d8ade20136ae</PackageIdentityName>
+    <PackageIdentityPublisher>CN=Thanh Tung</PackageIdentityPublisher>
+    <IntermediateOutputPath>D:\WindowApp\BingMap\BingMap\obj\x86\Release\</IntermediateOutputPath>
+    <RemoteDeploymentType></RemoteDeploymentType>
+    <PackageRegistrationPath></PackageRegistrationPath>
+    <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Assets\BadgeLogo.scale-400.png">
+      <PackagePath>Assets\BadgeLogo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Assets\google-pushpin.png">
+      <PackagePath>Assets\google-pushpin.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Assets\LockScreenLogo.scale-200.png">
+      <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Assets\logo.png">
+      <PackagePath>Assets\logo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Assets\logo.scale-100.png">
+      <PackagePath>Assets\logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Assets\logo.scale-150.png">
+      <PackagePath>Assets\logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Assets\logo.scale-200.png">
+      <PackagePath>Assets\logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Assets\logo.scale-400.png">
+      <PackagePath>Assets\logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Assets\SplashScreen.scale-150.png">
+      <PackagePath>Assets\SplashScreen.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Assets\SplashScreen.scale-200.png">
+      <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Assets\SplashScreen.scale-400.png">
+      <PackagePath>Assets\SplashScreen.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Assets\Square150x150Logo.scale-100.png">
+      <PackagePath>Assets\Square150x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Assets\Square150x150Logo.scale-125.png">
+      <PackagePath>Assets\Square150x150Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Assets\Square150x150Logo.scale-150.png">
+      <PackagePath>Assets\Square150x150Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Assets\Square150x150Logo.scale-200.png">
+      <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Assets\Square150x150Logo.scale-400.png">
+      <PackagePath>Assets\Square150x150Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Assets\Square310x310Logo.scale-400.png">
+      <PackagePath>Assets\Square310x310Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Assets\Square44x44Logo.scale-200.png">
+      <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Assets\Square44x44Logo.scale-400.png">
+      <PackagePath>Assets\Square44x44Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Assets\StoreLogo.png">
+      <PackagePath>Assets\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Assets\traffic.png">
+      <PackagePath>Assets\traffic.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Assets\Wide310x150Logo.scale-200.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Assets\Wide310x150Logo.scale-400.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Bing.Maps.dll">
+      <PackagePath>Bing.Maps.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Bing.Maps.winmd">
+      <PackagePath>Bing.Maps.winmd</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Bing.Maps\Blocked_Regions_01.png">
+      <PackagePath>Bing.Maps\Blocked_Regions_01.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Bing.Maps\circleImage-noalpha.png">
+      <PackagePath>Bing.Maps\circleImage-noalpha.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Bing.Maps\circleImage.png">
+      <PackagePath>Bing.Maps\circleImage.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Bing.Maps\CMF.ont">
+      <PackagePath>Bing.Maps\CMF.ont</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Bing.Maps\dashedImage.png">
+      <PackagePath>Bing.Maps\dashedImage.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Bing.Maps\EnglishEntityNames.hlx">
+      <PackagePath>Bing.Maps\EnglishEntityNames.hlx</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Bing.Maps\EntityLookup.hlx">
+      <PackagePath>Bing.Maps\EntityLookup.hlx</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Bing.Maps\EntityNameLength.hlx">
+      <PackagePath>Bing.Maps\EntityNameLength.hlx</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Bing.Maps\Font\Bing_Maps_Symbol.ttf">
+      <PackagePath>Bing.Maps\Font\Bing_Maps_Symbol.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Bing.Maps\GermanicEntityNames.hlx">
+      <PackagePath>Bing.Maps\GermanicEntityNames.hlx</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Bing.Maps\h0.tile">
+      <PackagePath>Bing.Maps\h0.tile</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Bing.Maps\h1.tile">
+      <PackagePath>Bing.Maps\h1.tile</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Bing.Maps\h2.tile">
+      <PackagePath>Bing.Maps\h2.tile</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Bing.Maps\h3.tile">
+      <PackagePath>Bing.Maps\h3.tile</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Bing.Maps\InvariantEntityNames.hlx">
+      <PackagePath>Bing.Maps\InvariantEntityNames.hlx</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Bing.Maps\LandmarkSchema.ont">
+      <PackagePath>Bing.Maps\LandmarkSchema.ont</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Bing.Maps\LatinEntityNames.hlx">
+      <PackagePath>Bing.Maps\LatinEntityNames.hlx</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Bing.Maps\map.config">
+      <PackagePath>Bing.Maps\map.config</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Bing.Maps\NameCount.hlx">
+      <PackagePath>Bing.Maps\NameCount.hlx</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Bing.Maps\NameRoleLcid.hlx">
+      <PackagePath>Bing.Maps\NameRoleLcid.hlx</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Bing.Maps\r0.tile">
+      <PackagePath>Bing.Maps\r0.tile</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Bing.Maps\r1.tile">
+      <PackagePath>Bing.Maps\r1.tile</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Bing.Maps\r2.tile">
+      <PackagePath>Bing.Maps\r2.tile</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Bing.Maps\r3.tile">
+      <PackagePath>Bing.Maps\r3.tile</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Bing.Maps\ScandinavianEntityNames.hlx">
+      <PackagePath>Bing.Maps\ScandinavianEntityNames.hlx</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Bing.Maps\Schema.ont">
+      <PackagePath>Bing.Maps\Schema.ont</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Bing.Maps\Shaders\BuildingShaderXYZN-downlevel.ps">
+      <PackagePath>Bing.Maps\Shaders\BuildingShaderXYZN-downlevel.ps</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Bing.Maps\Shaders\BuildingShaderXYZN-downlevel.vs">
+      <PackagePath>Bing.Maps\Shaders\BuildingShaderXYZN-downlevel.vs</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Bing.Maps\Shaders\BuildingShaderXYZN.ps">
+      <PackagePath>Bing.Maps\Shaders\BuildingShaderXYZN.ps</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Bing.Maps\Shaders\BuildingShaderXYZN.vs">
+      <PackagePath>Bing.Maps\Shaders\BuildingShaderXYZN.vs</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Bing.Maps\Shaders\DefaultShaderXY-downlevel.ps">
+      <PackagePath>Bing.Maps\Shaders\DefaultShaderXY-downlevel.ps</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Bing.Maps\Shaders\DefaultShaderXY-downlevel.vs">
+      <PackagePath>Bing.Maps\Shaders\DefaultShaderXY-downlevel.vs</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Bing.Maps\Shaders\DefaultShaderXY.ps">
+      <PackagePath>Bing.Maps\Shaders\DefaultShaderXY.ps</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Bing.Maps\Shaders\DefaultShaderXY.vs">
+      <PackagePath>Bing.Maps\Shaders\DefaultShaderXY.vs</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Bing.Maps\Shaders\DefaultShaderXYC-Compressed-downlevel.ps">
+      <PackagePath>Bing.Maps\Shaders\DefaultShaderXYC-Compressed-downlevel.ps</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Bing.Maps\Shaders\DefaultShaderXYC-Compressed-downlevel.vs">
+      <PackagePath>Bing.Maps\Shaders\DefaultShaderXYC-Compressed-downlevel.vs</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Bing.Maps\Shaders\DefaultShaderXYC-Compressed.ps">
+      <PackagePath>Bing.Maps\Shaders\DefaultShaderXYC-Compressed.ps</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Bing.Maps\Shaders\DefaultShaderXYC-Compressed.vs">
+      <PackagePath>Bing.Maps\Shaders\DefaultShaderXYC-Compressed.vs</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Bing.Maps\Shaders\DefaultShaderXYC-downlevel.ps">
+      <PackagePath>Bing.Maps\Shaders\DefaultShaderXYC-downlevel.ps</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Bing.Maps\Shaders\DefaultShaderXYC-downlevel.vs">
+      <PackagePath>Bing.Maps\Shaders\DefaultShaderXYC-downlevel.vs</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Bing.Maps\Shaders\DefaultShaderXYC.ps">
+      <PackagePath>Bing.Maps\Shaders\DefaultShaderXYC.ps</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Bing.Maps\Shaders\DefaultShaderXYC.vs">
+      <PackagePath>Bing.Maps\Shaders\DefaultShaderXYC.vs</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Bing.Maps\Shaders\DefaultShaderXYUV-downlevel.ps">
+      <PackagePath>Bing.Maps\Shaders\DefaultShaderXYUV-downlevel.ps</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Bing.Maps\Shaders\DefaultShaderXYUV-downlevel.vs">
+      <PackagePath>Bing.Maps\Shaders\DefaultShaderXYUV-downlevel.vs</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Bing.Maps\Shaders\DefaultShaderXYUV.ps">
+      <PackagePath>Bing.Maps\Shaders\DefaultShaderXYUV.ps</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Bing.Maps\Shaders\DefaultShaderXYUV.vs">
+      <PackagePath>Bing.Maps\Shaders\DefaultShaderXYUV.vs</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Bing.Maps\Shaders\DefaultShaderXYUVUVC-downlevel.ps">
+      <PackagePath>Bing.Maps\Shaders\DefaultShaderXYUVUVC-downlevel.ps</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Bing.Maps\Shaders\DefaultShaderXYUVUVC-downlevel.vs">
+      <PackagePath>Bing.Maps\Shaders\DefaultShaderXYUVUVC-downlevel.vs</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Bing.Maps\Shaders\DefaultShaderXYUVUVC.ps">
+      <PackagePath>Bing.Maps\Shaders\DefaultShaderXYUVUVC.ps</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Bing.Maps\Shaders\DefaultShaderXYUVUVC.vs">
+      <PackagePath>Bing.Maps\Shaders\DefaultShaderXYUVUVC.vs</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Bing.Maps\Shaders\DefaultShaderXYZW-downlevel.ps">
+      <PackagePath>Bing.Maps\Shaders\DefaultShaderXYZW-downlevel.ps</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Bing.Maps\Shaders\DefaultShaderXYZW-downlevel.vs">
+      <PackagePath>Bing.Maps\Shaders\DefaultShaderXYZW-downlevel.vs</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Bing.Maps\Shaders\DefaultShaderXYZW.ps">
+      <PackagePath>Bing.Maps\Shaders\DefaultShaderXYZW.ps</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Bing.Maps\Shaders\DefaultShaderXYZW.vs">
+      <PackagePath>Bing.Maps\Shaders\DefaultShaderXYZW.vs</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Bing.Maps\Shaders\DefaultShaderXYZWUV-downlevel.ps">
+      <PackagePath>Bing.Maps\Shaders\DefaultShaderXYZWUV-downlevel.ps</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Bing.Maps\Shaders\DefaultShaderXYZWUV-downlevel.vs">
+      <PackagePath>Bing.Maps\Shaders\DefaultShaderXYZWUV-downlevel.vs</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Bing.Maps\Shaders\DefaultShaderXYZWUV.ps">
+      <PackagePath>Bing.Maps\Shaders\DefaultShaderXYZWUV.ps</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Bing.Maps\Shaders\DefaultShaderXYZWUV.vs">
+      <PackagePath>Bing.Maps\Shaders\DefaultShaderXYZWUV.vs</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Bing.Maps\Shaders\LineShaderXYNMC-downlevel.ps">
+      <PackagePath>Bing.Maps\Shaders\LineShaderXYNMC-downlevel.ps</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Bing.Maps\Shaders\LineShaderXYNMC-downlevel.vs">
+      <PackagePath>Bing.Maps\Shaders\LineShaderXYNMC-downlevel.vs</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Bing.Maps\Shaders\LineShaderXYNMC.ps">
+      <PackagePath>Bing.Maps\Shaders\LineShaderXYNMC.ps</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Bing.Maps\Shaders\LineShaderXYNMC.vs">
+      <PackagePath>Bing.Maps\Shaders\LineShaderXYNMC.vs</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Bing.Maps\Shaders\TextRenderingShader-downlevel.ps">
+      <PackagePath>Bing.Maps\Shaders\TextRenderingShader-downlevel.ps</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Bing.Maps\Shaders\TextRenderingShader-downlevel.vs">
+      <PackagePath>Bing.Maps\Shaders\TextRenderingShader-downlevel.vs</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Bing.Maps\Shaders\TextRenderingShader.ps">
+      <PackagePath>Bing.Maps\Shaders\TextRenderingShader.ps</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Bing.Maps\Shaders\TextRenderingShader.vs">
+      <PackagePath>Bing.Maps\Shaders\TextRenderingShader.vs</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Bing.Maps\Shields202.hlx">
+      <PackagePath>Bing.Maps\Shields202.hlx</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Bing.Maps\Shields244.hlx">
+      <PackagePath>Bing.Maps\Shields244.hlx</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Bing.Maps\Shields39.hlx">
+      <PackagePath>Bing.Maps\Shields39.hlx</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Bing.Maps\SlavicEntityNames.hlx">
+      <PackagePath>Bing.Maps\SlavicEntityNames.hlx</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Bing.Maps\Streets202.hlx">
+      <PackagePath>Bing.Maps\Streets202.hlx</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Bing.Maps\Streets244.hlx">
+      <PackagePath>Bing.Maps\Streets244.hlx</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Bing.Maps\Streets39.hlx">
+      <PackagePath>Bing.Maps\Streets39.hlx</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Bing.Maps\Themes\Generic.xbf">
+      <PackagePath>Bing.Maps\Themes\Generic.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Bing.Maps\UnifiedStyle.MapStyle">
+      <PackagePath>Bing.Maps\UnifiedStyle.MapStyle</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\Bing.Maps\VenueMapsSchema.ont">
+      <PackagePath>Bing.Maps\VenueMapsSchema.ont</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\BingMap.dll">
+      <PackagePath>BingMap.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\BingMap.exe">
+      <PackagePath>BingMap.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\BingMap.pdb">
+      <PackagePath>BingMap.pdb</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\ClrCompression.dll">
+      <PackagePath>ClrCompression.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WindowApp\BingMap\BingMap\bin\x86\Release\ilc\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs.120\14.0\">
+      <Name>Microsoft.VCLibs.120.00.Universal</Name>
+      <Version>12.0.30501.0</Version>
+      <Architecture>ARM</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.120.00.Universal, MinVersion = 12.0.30501.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs.120\14.0\.\AppX\Retail\ARM\Microsoft.VCLibs.ARM.12.00.Universal.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs.120\14.0\">
+      <Name>Microsoft.VCLibs.120.00.Universal</Name>
+      <Version>12.0.30501.0</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.120.00.Universal, MinVersion = 12.0.30501.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs.120\14.0\.\AppX\Retail\x64\Microsoft.VCLibs.x64.12.00.Universal.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs.120\14.0\">
+      <Name>Microsoft.VCLibs.120.00.Universal</Name>
+      <Version>12.0.30501.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.120.00.Universal, MinVersion = 12.0.30501.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs.120\14.0\.\AppX\Retail\x86\Microsoft.VCLibs.x86.12.00.Universal.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.Native.Framework.1.3\1.3\">
+      <Name>Microsoft.NET.Native.Framework.1.3</Name>
+      <Version>1.3.24201.0</Version>
+      <Architecture>ARM</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.Native.Framework.1.3, MinVersion = 1.3.24201.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.Native.Framework.1.3\1.3\.\arm\ret\Native\Microsoft.NET.Native.Framework.1.3.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.Native.Framework.1.3\1.3\">
+      <Name>Microsoft.NET.Native.Framework.1.3</Name>
+      <Version>1.3.24201.0</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.Native.Framework.1.3, MinVersion = 1.3.24201.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.Native.Framework.1.3\1.3\.\x64\ret\Native\Microsoft.NET.Native.Framework.1.3.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.Native.Framework.1.3\1.3\">
+      <Name>Microsoft.NET.Native.Framework.1.3</Name>
+      <Version>1.3.24201.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.Native.Framework.1.3, MinVersion = 1.3.24201.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.Native.Framework.1.3\1.3\.\x86\ret\Native\Microsoft.NET.Native.Framework.1.3.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.Native.Runtime.1.4\1.4\">
+      <Name>Microsoft.NET.Native.Runtime.1.4</Name>
+      <Version>1.4.24201.0</Version>
+      <Architecture>ARM</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.Native.Runtime.1.4, MinVersion = 1.4.24201.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.Native.Runtime.1.4\1.4\.\AppX\ARM\Microsoft.NET.Native.Runtime.1.4.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.Native.Runtime.1.4\1.4\">
+      <Name>Microsoft.NET.Native.Runtime.1.4</Name>
+      <Version>1.4.24201.0</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.Native.Runtime.1.4, MinVersion = 1.4.24201.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.Native.Runtime.1.4\1.4\.\AppX\x64\Microsoft.NET.Native.Runtime.1.4.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.Native.Runtime.1.4\1.4\">
+      <Name>Microsoft.NET.Native.Runtime.1.4</Name>
+      <Version>1.4.24201.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.Native.Runtime.1.4, MinVersion = 1.4.24201.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.Native.Runtime.1.4\1.4\.\AppX\x86\Microsoft.NET.Native.Runtime.1.4.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00</Name>
+      <Version>14.0.24123.0</Version>
+      <Architecture>ARM</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00, MinVersion = 14.0.24123.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Retail\ARM\Microsoft.VCLibs.ARM.14.00.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00</Name>
+      <Version>14.0.24123.0</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00, MinVersion = 14.0.24123.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Retail\x64\Microsoft.VCLibs.x64.14.00.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00</Name>
+      <Version>14.0.24123.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00, MinVersion = 14.0.24123.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Retail\x86\Microsoft.VCLibs.x86.14.00.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>
